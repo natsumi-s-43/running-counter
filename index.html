@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランニング記録</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>ランニング記録</h1>
+
+    <div class="form">
+        <input type="date" id="date">
+        <input type="number" id="distance" step="0.1" placeholder="距離 (km)">
+        <button id="addBtn">追加 / 修正</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>日付</th>
+                <th>距離 (km)</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="list"></tbody>
+    </table>
+
+    <div class="total">
+        今月の合計<br>
+        <span id="totalDistance">0.0</span> km
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
